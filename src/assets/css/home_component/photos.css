@@ -1,0 +1,186 @@
+
+/* ----------- поле поиска ----------- */
+.photos-comp .v-input__slot {
+    border-radius: 3px !important;
+}
+.v-text-field--outline > .v-input__control > .v-input__slot {
+    background-color: white !important;
+}
+
+.photos-comp .search-container {
+    position: relative;
+}
+.photos-comp .flex.md6 {
+    position: relative;
+}
+.photos-comp .search-icon-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:24px;
+    right: 23px;
+    /* border: 2px solid black; */
+    /* z-index: -1; */
+    height: 40px;
+    width: 40px;
+
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.search-icon-layout .v-icon:hover {
+    font-size: 34px;
+    color: #218ccc;
+}
+.search-icon-layout .v-icon:active {
+    font-size: 30px;
+    color: #218dccaf;
+}
+
+.photos-comp .sort-photo {
+    
+    position: absolute;
+    /* top: 20%; */
+    right: 5px;
+}
+
+/* -------------- меню сортировки --------------- */
+.sort-photo .v-btn {
+    min-width: 134px;
+    border: 1px solid;
+    line-height: 1;
+}
+
+/* ------------------------------------ */
+
+/* ----------- галлерея ----------- */
+.photo-gallery {
+    padding: 4px;
+    margin-top: -5px;
+}
+.photo-gallery .photo__item {
+    cursor: pointer;
+}
+
+.photo__item .achiev {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.photo__item .bt-sheets {
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    /* justify-content: center; */
+    /* opacity: .3; */
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 5%, transparent 100%);
+    position: absolute;
+    width: 100%;
+
+    padding: 0 10px;
+    font-family: "Open Sans","Arial",sans-serif;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    /* line-height: 1.5; */
+}
+
+.bt-sheets .item-title {
+
+    font-size: 19px;
+    font-weight: 600;
+}
+.bt-sheets .item-votes,
+.bt-sheets .item-views {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-right: 10px;
+}
+
+/* Окно просмотра фотографии */
+.theme--dark.v-sheet {
+    background-color: black;
+    align-content: center;
+    display: flex;
+}
+
+.photo-view .close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    z-index: 2;
+
+    transition: all .5s ease-in-out;
+}
+.photo-view .close:hover {
+    opacity: 0.5;
+    transform: rotate(180deg) scale(0.9);
+}
+
+.photo-view .btn-arrow--h {
+    position: absolute;
+    /* border: 1px solid white; */
+    height: 100vh;
+    width: calc(100vh*(3/2));
+    left: calc(50vw - 100vh*(3/4));
+}
+
+.btn-arrow--v {
+    /* position: absolute;
+    border: 1px solid white; */
+    height: calc(100vw*(2/3)) !important;
+    width: 100vw !important;
+    top: calc(50vh - 100vw*(2/6)) !important;
+    left: 0 !important;
+}
+
+.btn-arrow--h .arrow_back,
+.btn-arrow--h .arrow_next {
+    position: absolute;
+    top:calc(50% - 100px);
+    width: 70px;
+    height: 200px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.btn-arrow--h .arrow_back {
+    left: 5px;
+}
+.btn-arrow--h .arrow_next {
+    right: -5px;
+}
+
+.btn-arrow--h .hide {
+    opacity: 0.05;
+    transition: opacity scale 333ms cubic-bezier(0.4, 0, 0.22, 1);
+}
+.btn-arrow--h:hover .hide {
+    opacity: 0.7;
+}
+.btn-arrow--h .hide:active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+
+
+/* ------------------- @media -------------------- */
+@media (max-width: 960px) {
+    .photos-comp .sort-photo {
+        position: absolute;
+        top: 80px;
+        right: 10px;
+    }
+
+    .photo-gallery {
+        padding: 4px;
+        margin-top: 30px;
+    }
+}
