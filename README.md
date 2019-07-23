@@ -25,8 +25,9 @@ npm run test
 npm run lint
 ```
 ### Run Nodemon server Node.js & Express.js
-npm run devserv
 ```
+npm run devserv
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
