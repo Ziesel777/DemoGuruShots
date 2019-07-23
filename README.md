@@ -1,4 +1,4 @@
-# kurs_gurushots
+# demo_gurushots
 
 ## Project setup
 ```
@@ -24,6 +24,8 @@ npm run test
 ```
 npm run lint
 ```
+### Run Nodemon server Node.js & Express.js
+npm run devserv
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
